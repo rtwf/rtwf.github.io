@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[小组知识库]]></title>
   <link href="http://rtwf.github.io/atom.xml" rel="self"/>
   <link href="http://rtwf.github.io/"/>
-  <updated>2014-07-02T13:29:42+08:00</updated>
+  <updated>2014-07-03T17:20:37+08:00</updated>
   <id>http://rtwf.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[邱俊炜]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Install Octproess]]></title>
+    <link href="http://rtwf.github.io/blog/2014/07/03/how-to-install-octproess/"/>
+    <updated>2014-07-03T17:06:14+08:00</updated>
+    <id>http://rtwf.github.io/blog/2014/07/03/how-to-install-octproess</id>
+    <content type="html"><![CDATA[<ol>
+<li>下载和安装git， 把git安装目录的bin和cmd文件目录加到path中</li>
+<li>下载和安装ruby1.9.3，安装时可以勾选 加到path中</li>
+</ol>
+
+]]></content>
+  </entry>
   
 </feed>
