@@ -9,9 +9,9 @@
   <meta name="author" content="邱俊炜">
 
   
-  <meta name="description" content="
-下载和安装git， 把git安装目录的bin和cmd文件目录加到path中
-下载和安装ruby1.9.3，安装时可以勾选 加到path中 ">
+  <meta name="description" content="下载和安装git， 把git安装目录的bin和cmd文件目录加到path中。
+下载和安装ruby1.9.3，安装时可以勾选 加到path中。 安装完成后可以通过ruby &mdash;version来测试是否安装成功
+去网上下载一个DevKit-tdm-32-4.5.2-20111229- &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,6 +91,13 @@
 <time datetime="2014-07-03T17:06:14+08:00" pubdate data-updated="true">Jul 3<sup>rd</sup>, 2014</time>
 	  
 
+<span class="tags">
+  Tag:
+  
+    <a href='/blog/tags/tools/'>tools</a>
+  
+</span>
+
       <span class="share-to-weibo">
         <a href="javascript:void(0)" onclick="window.open('http://service.weibo.com/share/share.php?appkey=&amp;ralateUid=&amp;title=How to Install Octproess - &amp;url=http://rtwf.github.io/blog/2014/07/03/how-to-install-octproess/', null, 'width=615,height=505,toolbar=0,status=0')" class="sina-weibo" title="分享到新浪微博"></a>
 
@@ -104,10 +111,145 @@
 
 
 <div class="entry-content"><ol>
-<li>下载和安装git， 把git安装目录的bin和cmd文件目录加到path中</li>
-<li>下载和安装ruby1.9.3，安装时可以勾选 加到path中</li>
+<li>下载和安装git， 把git安装目录的bin和cmd文件目录加到path中。</li>
+<li>下载和安装ruby1.9.3，安装时可以勾选 加到path中。 安装完成后可以通过ruby &mdash;version来测试是否安装成功</li>
+<li>去网上下载一个<a href="https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe">DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe</a> 解压到一个目录。dos cd 到这个目录。执行如下命令:</li>
 </ol>
 
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby dk.rb init 
+</span><span class='line'>ruby dk.rb install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>博客的代码高亮需要python环境的支持。去下个python2.7安装。python 安装完成后。执行下面的命令</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>easy_install pygments</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>设置本地环境</h2>
+
+<p>为了支持中文UTF-8编码，在Windows的环境变量中增加下面的选项。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>LANG = zh_CN.UTF-8
+</span><span class='line'>LC_ALL = zh_CN.UTF-8</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>配置git</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global user.name "yourname"
+</span><span class='line'>git config --global user.email "youremail"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>更新gem的更新源，ruby的官方网站经常被和谐。换成国内的更新源，这样速度就快多了，变更如下：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem sources -a http://ruby.taobao.org/
+</span><span class='line'>gem sources -r http://rubygems.org/</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>下载并配置Blog</h2>
+
+<p>在某个目录下，DOS命令</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@github.com:rtwf/rtwf.github.io.git rtwf
+</span><span class='line'>
+</span><span class='line'>如果clone下来只有master分支，那可以新建个source分支，
+</span><span class='line'>git checkout -b source 
+</span><span class='line'>这个命令会新建source分支并切换到source分支。
+</span><span class='line'>再执行git pull origin source 把远程的github上source分支拉到本地source分支。
+</span><span class='line'>
+</span><span class='line'>cd rtwf
+</span><span class='line'>gem install bundler
+</span><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>配置好之后，DOS cd 到rtwf目录下就可以写blog了。请确保你在source 分支下，通过git branch 命令可以查看。你在哪个分支下。 git checkout source 可以切换到source分支</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_post["title"] #创建个新的文章，在source/_post目录下，打开它，就可以编辑了。
+</span><span class='line'>
+</span><span class='line'>编辑完保存之后。
+</span><span class='line'>rake generate #生成网页
+</span><span class='line'>rake preview #预览 打开127.0.0.1:4000 可以看到。
+</span><span class='line'>rake deploy #发布
+</span><span class='line'>
+</span><span class='line'>然后记得提交，须要权限，要ssh的private key。
+</span><span class='line'>git add .
+</span><span class='line'>git commit -m "your commit message"
+</span><span class='line'>git push origin source
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>git remote -v 命令可以查远程的地址。
+<img src="../images/gitremote.png" alt="" />
+有不懂的git命令都可以用git command &mdash;help 来查这个command。</p>
+
+<p>为了确保安全不造成混乱，以后每次写blog之前，都要检查，你是否是在source分支下，是否跟服务器上是一致的。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git checkout source #切换到source分支
+</span><span class='line'>git pull origin source #更新服务器上的内容到本地</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>注意事项</h2>
+
+<ul>
+<li>图片最好是上传到一些可以保存图片的网站上，然后用 octopress 的Image 标签来引用， 相关用法<a href="http://octopress.org/docs/plugins/image-tag/%E3%80%82">http://octopress.org/docs/plugins/image-tag/%E3%80%82</a>
+用markdown语法也是可以的，不要写本地的相对路径（如上面的那张图片，会导致在Tag目录下看不到</li>
+</ul>
+
+
+<p>相关的文章
+octopress+github 构建blog <a href="http://xuhehuan.com/783.html">在Github上搭建Octopress博客</a></p>
+
+<p><a href="http://octopress.org/">http://octopress.org/</a> 官方文档必看。这里有许多官方的plugin介绍。包括代码高亮，插入网络上图片等。</p>
+
+<p><a href="http://qingbo.net/picky/502-markdown-syntax.html">MarkDonw的语法，文章就是用markdown语法的，很简单。</a></p>
+
+<p>-git的学习</p>
+
+<p>英文10本
+<a href="http://sixrevisions.com/resources/git-tutorials-beginners/#comments">http://sixrevisions.com/resources/git-tutorials-beginners/#comments</a></p>
+
+<p>中文</p>
+
+<p><a href="http://gitbook.liuhui998.com/index.html">http://gitbook.liuhui998.com/index.html</a></p>
+
+<p>详解系列
+<a href="http://blog.jobbole.com/24379/">http://blog.jobbole.com/24379/</a>
+<a href="http://blog.jobbole.com/25808/">http://blog.jobbole.com/25808/</a></p>
 </div>
 
 
@@ -133,12 +275,6 @@
 <time datetime="2014-07-03T17:06:14+08:00" pubdate data-updated="true">Jul 3<sup>rd</sup>, 2014</time>
       
 
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/tools/'>tools</a>
-  
-</span>
-
 
     </p>
     
@@ -157,6 +293,12 @@
     </p>
   </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -187,6 +329,22 @@
 
 </footer>
   
+
+<script type="text/javascript">
+      var disqus_shortname = 'sweetdark';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rtwf.github.io/blog/2014/07/03/how-to-install-octproess/';
+        var disqus_url = 'http://rtwf.github.io/blog/2014/07/03/how-to-install-octproess/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
