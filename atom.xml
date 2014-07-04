@@ -4,7 +4,7 @@
   <title><![CDATA[小组知识库]]></title>
   <link href="http://rtwf.github.io/atom.xml" rel="self"/>
   <link href="http://rtwf.github.io/"/>
-  <updated>2014-07-04T09:29:19+08:00</updated>
+  <updated>2014-07-04T13:26:51+08:00</updated>
   <id>http://rtwf.github.io/</id>
   <author>
     <name><![CDATA[邱俊炜]]></name>
@@ -140,7 +140,8 @@
 
 
 <p>相关的文章
-octopress+github 构建blog <a href="http://xuhehuan.com/783.html">在Github上搭建Octopress博客</a></p>
+octopress+github 构建blog <a href="http://xuhehuan.com/783.html">在Github上搭建Octopress博客</a>
+<a href="http://caiqinghua.com/blog/2013/08/26/deploy-octopress-to-github-pages/">在github Pages上部署octopress搭建个人博客系统</a></p>
 
 <p><a href="http://octopress.org/">http://octopress.org/</a> 官方文档必看。这里有许多官方的plugin介绍。包括代码高亮，插入网络上图片等。</p>
 
