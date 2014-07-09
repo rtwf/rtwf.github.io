@@ -85,6 +85,7 @@ git pull origin source #更新服务器上的内容到本地
 
 相关的文章
 octopress+github 构建blog [在Github上搭建Octopress博客](http://xuhehuan.com/783.html)
+[在github Pages上部署octopress搭建个人博客系统](http://caiqinghua.com/blog/2013/08/26/deploy-octopress-to-github-pages/)
 
 http://octopress.org/ 官方文档必看。这里有许多官方的plugin介绍。包括代码高亮，插入网络上图片等。
 
