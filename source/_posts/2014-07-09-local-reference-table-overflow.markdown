@@ -68,7 +68,7 @@ Java_C_f(JNIEnv *env, jobject this)
 虽然VM会在本地函数返回时，释放所有的*LR*，但我们也可以显示的控制*LR*的释放。*LR*引用的对象只有在，*LR*无效的时候才会被GC回收，在MyNewString函数中调用的DeleteLocalRef 释放中间的变量elemArr，这样GC可以立即回收这个*LR* 不然elemArr这个*LR*会等到本地函数MyNewString返回时才被回收。
 
 *LR*只能在创建它的线程中使用，在其它的线程中使用它是错误的。所以用一个全局变量保存在其它线程中用是不可行的。
-
+<!--more-->
 ##释放引用
 ```
 //1.FindClass 

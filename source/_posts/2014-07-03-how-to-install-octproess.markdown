@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "How to install octproess"
+title: "如何使用本博客"
 date: 2014-07-03 17:06:14 +0800
 comments: true
-tags: tools
+tags: octopress
 ---
 **注意 你的系统的环境变量一定不要有中文, 如果在rake中提示 invalid byte sequence in UTF-8 (ArgumentError) 请检查你的所有的系统环境变量**
 
@@ -64,6 +64,7 @@ rake setup_github_pages #设置你的目录
 在此之前请确保你在source 分支下，通过git branch 命令可以查看。你在哪个分支下。 git checkout source 可以切换到source分支
 ``` ruby  发布的步骤
 rake new_post["title"] #创建个新的文章，在source/_post目录下，打开它，就可以编辑了。
+#注意title这里命令生成的title只能是英文，你可以生成后的post中修改title
 
 编辑完保存之后。
 rake generate #生成网页
@@ -76,10 +77,11 @@ git commit -m "your commit message"
 git push origin source
 
 ```
+如果想弄清楚octopress各个目录的作用，以及如何发布的。可以看根目录下的Rakefile文件中的ruby代码 genenrate deploy的task。大概就可以清楚几个主要目录的作用了
+
 git remote -v 命令可以查远程的地址。
 ![](../images/gitremote.png)
 有不懂的git命令都可以用git command --help 来查这个command。
-
 
 为了确保安全不造成混乱，以后每次写blog之前，都要检查，你是否是在source分支下，是否跟服务器上是一致的。
 ```
@@ -97,8 +99,11 @@ octopress+github 构建blog [在Github上搭建Octopress博客](http://xuhehuan.
 
 http://octopress.org/ 官方文档必看。这里有许多官方的plugin介绍。包括代码高亮，插入网络上图片等。
 
-[MarkDonw的语法，文章就是用markdown语法的，很简单。](http://qingbo.net/picky/502-markdown-syntax.html)
-**markdown 中两个回车才是换行哦**
+MarkDown的语法可以参考
+
+[用Markdown写Markdown语法说明](http://sweetdark.github.io/blog/2013/01/02/write-markdown/)
+
+**markdown 中两个回车才是换行**
 
 -git的学习 
 
