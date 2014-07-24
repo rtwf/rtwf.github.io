@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "buildbot的构建总结"
+title: "buildbot的搭建总结"
 date: 2014-07-23 18:56:27 +0800
 comments: true
 tags: build 
@@ -8,21 +8,22 @@ tags: build
 **PlatForm**      				*win32 64bit*
 **python version** 				*python2.7 32bit*
 ##入门
-如果是Linux系统的[FirstRun](http://docs.buildbot.net/current/tutorial/firstrun.html)，可以按照官方这个步骤去做。官方说Windows也差不多，但在我的环境下有问题，（我安装了Cygwin，在Cygwin环境下运行的）。 virtualenv  这个的easy\_install太旧了。我用sandbox运行 easy\_install buildbot总是提示缺少库。更新easy\_install 也没用。 关于用easy\_install -U setuptool的产生的Perssion Denied问题可以看(这里)[http://stackoverflow.com/questions/17601020/easy-install-exe-permission-denied-on-windows-8]
+如果是Linux系统的[FirstRun](http://docs.buildbot.net/current/tutorial/firstrun.html)，可以按照官方这个步骤去做。官方说Windows也差不多，但在我的环境下有问题，（我安装了Cygwin，在Cygwin环境下运行的）。 virtualenv  这个的easy\_install太旧了。我用sandbox运行 easy\_install buildbot总是提示缺少库。更新easy\_install 也没用。 关于用easy\_install -U setuptool的产生的Perssion Denied问题可以看[这里](http://stackoverflow.com/questions/17601020/easy-install-exe-permission-denied-on-windows-8)
 
 Windows 下的安装步骤。参考[这里](http://trac.buildbot.net/wiki/RunningBuildbotOnWindows) 下面说一下我遇到的问题。
 我的建议是都安装x86的版本。python  PyWin32版本。 有一些需要编译的python库很麻烦如pysqlite 。python2.7的大部分库是用VS2008编译的，可以去下个VS2008的Express。如果是Windows 64bit出现问题参考[这里](http://stackoverflow.com/questions/4676728/value-error-trying-to-install-python-for-windows-extensions)
-因为我装了好几个版本的VS。我的问题弄了好久没解决。不好网上有编译好的版本。
-http://www.lfd.uci.edu/~gohlke/pythonlibs/#pywin32 我在这里下了个pysqlite.
+因为我装了好几个版本的VS。我的问题弄了好久没解决。还好网上有编译好的版本。
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#pywin32 我在这里下了个pysqlite的exe.
+如果下载的是.zip文件，则解压，然后dos进入该目录，执行`python setup.py install`命令即可
 也在网上找了个OpenSSL windwos版的下载安装好了。
-
+大部分需要的组件我都上传的网盘了地址http://pan.baidu.com/s/1dD7tlUp
 检查是否buildbot和buildbot-slave是否安装好了。
 ```
 buildbot --version
 buildslave --version
 ```
 如果一切正常那可以按照[FirstRun](http://docs.buildbot.net/current/tutorial/firstrun.html) 这里后面的继续去做了。
-<!--more--!>
+<!--more-->
 ##Creating a master
 
 At the terminal, type:
