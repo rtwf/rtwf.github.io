@@ -1,118 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>小组知识库</title>
-  <meta name="author" content="邱俊炜">
-
-  
-  <meta name="description" content="PlatForm win32 64bit
-python version python2.7 32bit 入门 如果是Linux系统的FirstRun，可以按照官方这个步骤去做。官方说Windows也差不多，但在我的环境下有问题，（我安装了Cygwin，在Cygwin环境下运行的）。 &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://rtwf.github.io/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="小组知识库" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">小组知识库</a></h1>
-  
-    <h2>学而时习之，不亦乐乎</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:rtwf.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">首页</a></li>
-  <li><a href="/blog/archives">目录</a></li>
-  <li><a href="/about">关于我</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-
-
-  <header>
+  <title><![CDATA[小组知识库]]></title>
+  <link href="http://rtwf.github.io/atom.xml" rel="self"/>
+  <link href="http://rtwf.github.io/"/>
+  <updated>2014-07-24T09:39:23+08:00</updated>
+  <id>http://rtwf.github.io/</id>
+  <author>
+    <name><![CDATA[邱俊炜]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2014/07/23/buildbot-build/">Buildbot的构建总结</a></h1>
-    
-    
-    <p class="meta">
-      
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2014-07-23T18:56:27+08:00" pubdate data-updated="true">Jul 23<sup>rd</sup>, 2014</time>
-	  
-
-<span class="tags">
-  Tag:
-  
-    <a href='/blog/tags/build/'>build</a>
-  
-</span>
-
-      <span class="share-to-weibo">
-        <a href="javascript:void(0)" onclick="window.open('http://service.weibo.com/share/share.php?appkey=&amp;ralateUid=&amp;title=Buildbot的构建总结 - &amp;url=http://rtwf.github.io/blog/2014/07/23/buildbot-build/', null, 'width=615,height=505,toolbar=0,status=0')" class="sina-weibo" title="分享到新浪微博"></a>
-
-        <a href="javascript:void(0)" onclick="window.open('http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;appkey=&amp;title=Buildbot的构建总结 - &amp;url=http://rtwf.github.io/blog/2014/07/23/buildbot-build/', null, 'width=700,height=680,toolbar=0,status=0')" class="tencent-weibo" title="分享到腾讯微博"></a>
-
-        <a href="javascript:void(0)" onclick="window.open('https://twitter.com/intent/tweet?text=Buildbot的构建总结 - http://rtwf.github.io/blog/2014/07/23/buildbot-build/', null, 'width=600,height=300,toolbar=0,status=0')" class="twitter" title="分享到Twitter"></a>
-      </span>
-    </p>
-  
-  </header>
-
-
-  <div class="entry-content"><p><strong>PlatForm</strong>                    <em>win32 64bit</em>
+  <entry>
+    <title type="html"><![CDATA[buildbot的构建总结]]></title>
+    <link href="http://rtwf.github.io/blog/2014/07/23/buildbot-build/"/>
+    <updated>2014-07-23T18:56:27+08:00</updated>
+    <id>http://rtwf.github.io/blog/2014/07/23/buildbot-build</id>
+    <content type="html"><![CDATA[<p><strong>PlatForm</strong>                    <em>win32 64bit</em>
 <strong>python version</strong>              <em>python2.7 32bit</em></p>
 
 <h2>入门</h2>
@@ -223,59 +129,15 @@ You should now be able to go to <a href="http://localhost:8010,">http://localhos
 <p>Click on the Waterfall Display link and you get this:</p>
 
 <p><img src="http://docs.buildbot.net/current/_images/waterfall-empty.png"></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/07/17/vs-error-collection/">Vs编译错误及解决办法</a></h1>
-    
-    
-    <p class="meta">
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-07-17T18:18:48+08:00" pubdate data-updated="true">Jul 17<sup>th</sup>, 2014</time>
-	  
-
-<span class="tags">
-  Tag:
-  
-    <a href='/blog/tags/compile/'>Compile</a>
-  
-</span>
-
-      <span class="share-to-weibo">
-        <a href="javascript:void(0)" onclick="window.open('http://service.weibo.com/share/share.php?appkey=&amp;ralateUid=&amp;title=Vs编译错误及解决办法 - &amp;url=http://rtwf.github.io/blog/2014/07/17/vs-error-collection/', null, 'width=615,height=505,toolbar=0,status=0')" class="sina-weibo" title="分享到新浪微博"></a>
-
-        <a href="javascript:void(0)" onclick="window.open('http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;appkey=&amp;title=Vs编译错误及解决办法 - &amp;url=http://rtwf.github.io/blog/2014/07/17/vs-error-collection/', null, 'width=700,height=680,toolbar=0,status=0')" class="tencent-weibo" title="分享到腾讯微博"></a>
-
-        <a href="javascript:void(0)" onclick="window.open('https://twitter.com/intent/tweet?text=Vs编译错误及解决办法 - http://rtwf.github.io/blog/2014/07/17/vs-error-collection/', null, 'width=600,height=300,toolbar=0,status=0')" class="twitter" title="分享到Twitter"></a>
-      </span>
-    </p>
-  
-  </header>
-
-
-  <div class="entry-content"><h3>error C2220: 警告被视为错误 &ndash; 没有生成“object”文件</h3>
+  <entry>
+    <title type="html"><![CDATA[vs编译错误及解决办法]]></title>
+    <link href="http://rtwf.github.io/blog/2014/07/17/vs-error-collection/"/>
+    <updated>2014-07-17T18:18:48+08:00</updated>
+    <id>http://rtwf.github.io/blog/2014/07/17/vs-error-collection</id>
+    <content type="html"><![CDATA[<h3>error C2220: 警告被视为错误 &ndash; 没有生成“object”文件</h3>
 
 <p>这种错误的原因是：原因是该文件的代码页为英文，而我们系统中的代码页为中文。
 解决方案：
@@ -369,59 +231,15 @@ STL已经不能有NULL迭代器这么一说了，想想也对，在NULL迭代器
 通过重新定义
 <code>FILE _iob[3] = {__iob_func()[0], __iob_func()[1], __iob_func()[2]};</code>
 就把vc6需要用到的</em>iob数组搞出来了</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/07/09/eclipse-tools/">Eclipse 工具</a></h1>
-    
-    
-    <p class="meta">
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-07-09T19:33:01+08:00" pubdate data-updated="true">Jul 9<sup>th</sup>, 2014</time>
-	  
-
-<span class="tags">
-  Tag:
-  
-    <a href='/blog/tags/tools/'>tools</a>
-  
-</span>
-
-      <span class="share-to-weibo">
-        <a href="javascript:void(0)" onclick="window.open('http://service.weibo.com/share/share.php?appkey=&amp;ralateUid=&amp;title=Eclipse 工具 - &amp;url=http://rtwf.github.io/blog/2014/07/09/eclipse-tools/', null, 'width=615,height=505,toolbar=0,status=0')" class="sina-weibo" title="分享到新浪微博"></a>
-
-        <a href="javascript:void(0)" onclick="window.open('http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;appkey=&amp;title=Eclipse 工具 - &amp;url=http://rtwf.github.io/blog/2014/07/09/eclipse-tools/', null, 'width=700,height=680,toolbar=0,status=0')" class="tencent-weibo" title="分享到腾讯微博"></a>
-
-        <a href="javascript:void(0)" onclick="window.open('https://twitter.com/intent/tweet?text=Eclipse 工具 - http://rtwf.github.io/blog/2014/07/09/eclipse-tools/', null, 'width=600,height=300,toolbar=0,status=0')" class="twitter" title="分享到Twitter"></a>
-      </span>
-    </p>
-  
-  </header>
-
-
-  <div class="entry-content"><h2>配置Javap工具</h2>
+  <entry>
+    <title type="html"><![CDATA[Eclipse 工具]]></title>
+    <link href="http://rtwf.github.io/blog/2014/07/09/eclipse-tools/"/>
+    <updated>2014-07-09T19:33:01+08:00</updated>
+    <id>http://rtwf.github.io/blog/2014/07/09/eclipse-tools</id>
+    <content type="html"><![CDATA[<h2>配置Javap工具</h2>
 
 <p>在Eclipse的Menu中打开Run->External Tools->External Tools Configurations
 添加一个新的项。
@@ -441,59 +259,15 @@ javah的工具配置类似。</p>
 Build选项下面就不要勾上build before launch了。</p>
 
 <p><a href="http://www.open-open.com/bbs/view/1320934157953/">Eclipse快捷键 10个最有用的快捷键</a></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/07/09/local-reference-table-overflow/">Andriod Ndk Error Local Reference Table Overflow Max 512</a></h1>
-    
-    
-    <p class="meta">
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-07-09T12:57:43+08:00" pubdate data-updated="true">Jul 9<sup>th</sup>, 2014</time>
-	  
-
-<span class="tags">
-  Tag:
-  
-    <a href='/blog/tags/jni/'>JNI</a>
-  
-</span>
-
-      <span class="share-to-weibo">
-        <a href="javascript:void(0)" onclick="window.open('http://service.weibo.com/share/share.php?appkey=&amp;ralateUid=&amp;title=Andriod Ndk Error Local Reference Table Overflow Max 512 - &amp;url=http://rtwf.github.io/blog/2014/07/09/local-reference-table-overflow/', null, 'width=615,height=505,toolbar=0,status=0')" class="sina-weibo" title="分享到新浪微博"></a>
-
-        <a href="javascript:void(0)" onclick="window.open('http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;appkey=&amp;title=Andriod Ndk Error Local Reference Table Overflow Max 512 - &amp;url=http://rtwf.github.io/blog/2014/07/09/local-reference-table-overflow/', null, 'width=700,height=680,toolbar=0,status=0')" class="tencent-weibo" title="分享到腾讯微博"></a>
-
-        <a href="javascript:void(0)" onclick="window.open('https://twitter.com/intent/tweet?text=Andriod Ndk Error Local Reference Table Overflow Max 512 - http://rtwf.github.io/blog/2014/07/09/local-reference-table-overflow/', null, 'width=600,height=300,toolbar=0,status=0')" class="twitter" title="分享到Twitter"></a>
-      </span>
-    </p>
-  
-  </header>
-
-
-  <div class="entry-content"><h1>引言</h1>
+  <entry>
+    <title type="html"><![CDATA[Andriod ndk error local reference table overflow Max 512]]></title>
+    <link href="http://rtwf.github.io/blog/2014/07/09/local-reference-table-overflow/"/>
+    <updated>2014-07-09T12:57:43+08:00</updated>
+    <id>http://rtwf.github.io/blog/2014/07/09/local-reference-table-overflow</id>
+    <content type="html"><![CDATA[<h1>引言</h1>
 
 <p>在Android开发中，常会遇到 local reference table overflow的错误。原因是从java代码进入jni层的本地代码调用时，Dalvik就会创建一张local reference表来存储local reference， 这张表的表项数有最大限制。一般为512个。当表项数超过最大值限制时，Dalvik就会抛出异常。</p>
 
@@ -603,63 +377,125 @@ Build选项下面就不要勾上build before launch了。</p>
 
 <p><em>LR</em>只能在创建它的线程中使用，在其它的线程中使用它是错误的。所以用一个全局变量保存在其它线程中用是不可行的。</p>
 
-</div>
+<!--more-->
+
+
+<h2>释放引用</h2>
+
+<figure class='code'><figcaption><span>错误的例子</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="c1">//1.FindClass </span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//例如，</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">jclass</span> <span class="n">ref</span><span class="o">=</span> <span class="p">(</span><span class="n">env</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">FindClass</span><span class="p">(</span><span class="s">&quot;java/lang/String&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">env</span><span class="o">-&gt;</span><span class="n">DeleteLocalRef</span><span class="p">(</span><span class="n">ref</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="mf">2.</span><span class="n">NewString</span><span class="o">/</span> <span class="n">NewStringUTF</span><span class="o">/</span><span class="n">NewObject</span><span class="o">/</span><span class="n">NewByteArray</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//例如，</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">jstring</span>     <span class="p">(</span><span class="o">*</span><span class="n">NewString</span><span class="p">)(</span><span class="n">JNIEnv</span><span class="o">*</span><span class="p">,</span> <span class="k">const</span> <span class="n">jchar</span><span class="o">*</span><span class="p">,</span> <span class="n">jsize</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">const</span> <span class="n">jchar</span><span class="o">*</span> <span class="p">(</span><span class="o">*</span><span class="n">GetStringChars</span><span class="p">)(</span><span class="n">JNIEnv</span><span class="o">*</span><span class="p">,</span> <span class="n">jstring</span><span class="p">,</span> <span class="n">jboolean</span><span class="o">*</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span>        <span class="p">(</span><span class="o">*</span><span class="n">ReleaseStringChars</span><span class="p">)(</span><span class="n">JNIEnv</span><span class="o">*</span><span class="p">,</span> <span class="n">jstring</span><span class="p">,</span> <span class="k">const</span> <span class="n">jchar</span><span class="o">*</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">jstring</span>     <span class="p">(</span><span class="o">*</span><span class="n">NewStringUTF</span><span class="p">)(</span><span class="n">JNIEnv</span><span class="o">*</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="p">(</span><span class="o">*</span><span class="n">GetStringUTFChars</span><span class="p">)(</span><span class="n">JNIEnv</span><span class="o">*</span><span class="p">,</span> <span class="n">jstring</span><span class="p">,</span> <span class="n">jboolean</span><span class="o">*</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span>        <span class="p">(</span><span class="o">*</span><span class="n">ReleaseStringUTFChars</span><span class="p">)(</span><span class="n">JNIEnv</span><span class="o">*</span><span class="p">,</span> <span class="n">jstring</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">env</span><span class="o">-&gt;</span><span class="n">DeleteLocalRef</span><span class="p">(</span><span class="n">ref</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="mf">3.</span> <span class="n">GetObjectField</span><span class="o">/</span><span class="n">GetObjectClass</span><span class="o">/</span><span class="n">GetObjectArrayElement</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">jclass</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">env</span><span class="o">-&gt;</span><span class="n">GetObjectClass</span><span class="p">(</span><span class="n">robj</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">env</span><span class="o">-&gt;</span><span class="n">DeleteLocalRef</span><span class="p">(</span><span class="n">ref</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="mf">4.</span><span class="n">GetByteArrayElements</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">jbyte</span><span class="o">*</span> <span class="n">array</span><span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">env</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">GetByteArrayElements</span><span class="p">(</span><span class="n">env</span><span class="p">,</span><span class="n">jarray</span><span class="p">,</span><span class="o">&amp;</span><span class="n">isCopy</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="o">*</span><span class="n">env</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">ReleaseByteArrayElements</span><span class="p">(</span><span class="n">env</span><span class="p">,</span><span class="n">jarray</span><span class="p">,</span><span class="n">array</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">input</span> <span class="o">=</span><span class="p">(</span><span class="o">*</span><span class="n">env</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">GetStringUTFChars</span><span class="p">(</span><span class="n">env</span><span class="p">,</span><span class="n">jinput</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">isCopy</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="o">*</span><span class="n">env</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">ReleaseStringUTFChars</span><span class="p">(</span><span class="n">env</span><span class="p">,</span><span class="n">jinput</span><span class="p">,</span><span class="n">input</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>参考</h2>
+
+<ol>
+<li><p><a href="http://journals.ecs.soton.ac.uk/java/tutorial/native1.1/implementing/refs.html">Local and Global References</a></p></li>
+<li><p><a href="http://www.soi.city.ac.uk/~kloukin/IN2P3/material/jni.pdf">The Java ™  Native Interface Programmer’s Guide and Specification</a></p></li>
+<li><p><a href="http://mysuperbaby.iteye.com/blog/1603817">http://mysuperbaby.iteye.com/blog/1603817</a></p></li>
+</ol>
+
+]]></content>
+  </entry>
   
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/07/09/local-reference-table-overflow/">阅读全文 &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/07/03/how-to-install-octproess/">如何使用本博客</a></h1>
-    
-    
-    <p class="meta">
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-07-03T17:06:14+08:00" pubdate data-updated="true">Jul 3<sup>rd</sup>, 2014</time>
-	  
-
-<span class="tags">
-  Tag:
-  
-    <a href='/blog/tags/octopress/'>octopress</a>
-  
-</span>
-
-      <span class="share-to-weibo">
-        <a href="javascript:void(0)" onclick="window.open('http://service.weibo.com/share/share.php?appkey=&amp;ralateUid=&amp;title=如何使用本博客 - &amp;url=http://rtwf.github.io/blog/2014/07/03/how-to-install-octproess/', null, 'width=615,height=505,toolbar=0,status=0')" class="sina-weibo" title="分享到新浪微博"></a>
-
-        <a href="javascript:void(0)" onclick="window.open('http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;appkey=&amp;title=如何使用本博客 - &amp;url=http://rtwf.github.io/blog/2014/07/03/how-to-install-octproess/', null, 'width=700,height=680,toolbar=0,status=0')" class="tencent-weibo" title="分享到腾讯微博"></a>
-
-        <a href="javascript:void(0)" onclick="window.open('https://twitter.com/intent/tweet?text=如何使用本博客 - http://rtwf.github.io/blog/2014/07/03/how-to-install-octproess/', null, 'width=600,height=300,toolbar=0,status=0')" class="twitter" title="分享到Twitter"></a>
-      </span>
-    </p>
-  
-  </header>
-
-
-  <div class="entry-content"><p><strong>注意 你的系统的环境变量一定不要有中文, 如果在rake中提示 invalid byte sequence in UTF-8 (ArgumentError) 请检查你的所有的系统环境变量</strong></p>
+  <entry>
+    <title type="html"><![CDATA[如何使用本博客]]></title>
+    <link href="http://rtwf.github.io/blog/2014/07/03/how-to-install-octproess/"/>
+    <updated>2014-07-03T17:06:14+08:00</updated>
+    <id>http://rtwf.github.io/blog/2014/07/03/how-to-install-octproess</id>
+    <content type="html"><![CDATA[<p><strong>注意 你的系统的环境变量一定不要有中文, 如果在rake中提示 invalid byte sequence in UTF-8 (ArgumentError) 请检查你的所有的系统环境变量</strong></p>
 
 <ol>
 <li>下载和安装git， 把git安装目录的bin和cmd文件目录加到path中。</li>
@@ -822,99 +658,7 @@ octopress+github 构建blog <a href="http://xuhehuan.com/783.html">在Github上�
 <p><a href="http://blog.jobbole.com/24379/">http://blog.jobbole.com/24379/</a></p>
 
 <p><a href="http://blog.jobbole.com/25808/">http://blog.jobbole.com/25808/</a></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>最新发布</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2014/07/23/buildbot-build/">buildbot的构建总结</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/07/17/vs-error-collection/">vs编译错误及解决办法</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/07/09/eclipse-tools/">Eclipse 工具</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/07/09/local-reference-table-overflow/">Andriod ndk error local reference table overflow Max 512</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/07/03/how-to-install-octproess/">如何使用本博客</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section>
-  <h1>Tag Cloud</h1>
-    <span id="tag-cloud"><embed type='application/x-shockwave-flash' src='/javascripts/tagcloud.swf'width='100%' height='250' bgcolor='#f2f2f2' id='tagcloudflash' name='tagcloudflash' quality='high' allowscriptaccess='always'flashvars="tcolor=0x333333&amp;tcolor2=0x333333&amp;hicolor=0x000000&amp;tspeed=100&amp;distr=true&amp;mode=tags&amp;tagcloud=%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Frtwf.github.io%2Fblog%2Ftags%2Fbuild%27+style%3D%27font-size%3A+50.0%25%27%3Ebuild%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Frtwf.github.io%2Fblog%2Ftags%2Fcompile%27+style%3D%27font-size%3A+50.0%25%27%3ECompile%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Frtwf.github.io%2Fblog%2Ftags%2Fjni%27+style%3D%27font-size%3A+50.0%25%27%3EJNI%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Frtwf.github.io%2Fblog%2Ftags%2Foctopress%27+style%3D%27font-size%3A+50.0%25%27%3Eoctopress%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Frtwf.github.io%2Fblog%2Ftags%2Ftools%27+style%3D%27font-size%3A+50.0%25%27%3Etools%3C%2Fa%3E+%3C%2Ftags%3E"></span>
-</section>
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - 邱俊炜 -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'sweetdark';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

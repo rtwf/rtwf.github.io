@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Eclipse 工具 - 小组知识库</title>
+  <meta name="author" content="邱俊炜">
+
+  
+  <meta name="description" content="配置Javap工具 在Eclipse的Menu中打开Run->External Tools->External Tools Configurations
+添加一个新的项。 javap这个工具可以用来输出java类 对应jni的描述。 把Signature 后面的字符串拷贝就行了（后面的分号也要拷贝 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rtwf.github.io/blog/2014/07/09/eclipse-tools/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="小组知识库" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">小组知识库</a></h1>
+  
+    <h2>学而时习之，不亦乐乎</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rtwf.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">首页</a></li>
+  <li><a href="/blog/archives">目录</a></li>
+  <li><a href="/about">关于我</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+
+
+  <header>
+    
+      <h1 class="entry-title">Eclipse 工具</h1>
+    
+    
+    <p class="meta">
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-09T19:33:01+08:00" pubdate data-updated="true">Jul 9<sup>th</sup>, 2014</time>
+	  
+
+<span class="tags">
+  Tag:
+  
+    <a href='/blog/tags/tools/'>tools</a>
+  
+</span>
+
+      <span class="share-to-weibo">
+        <a href="javascript:void(0)" onclick="window.open('http://service.weibo.com/share/share.php?appkey=&amp;ralateUid=&amp;title=Eclipse 工具 - &amp;url=http://rtwf.github.io/blog/2014/07/09/eclipse-tools/', null, 'width=615,height=505,toolbar=0,status=0')" class="sina-weibo" title="分享到新浪微博"></a>
+
+        <a href="javascript:void(0)" onclick="window.open('http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;appkey=&amp;title=Eclipse 工具 - &amp;url=http://rtwf.github.io/blog/2014/07/09/eclipse-tools/', null, 'width=700,height=680,toolbar=0,status=0')" class="tencent-weibo" title="分享到腾讯微博"></a>
+
+        <a href="javascript:void(0)" onclick="window.open('https://twitter.com/intent/tweet?text=Eclipse 工具 - http://rtwf.github.io/blog/2014/07/09/eclipse-tools/', null, 'width=600,height=300,toolbar=0,status=0')" class="twitter" title="分享到Twitter"></a>
+      </span>
+    </p>
+  
+  </header>
+
+
+<div class="entry-content"><h2>配置Javap工具</h2>
+
+<p>在Eclipse的Menu中打开Run->External Tools->External Tools Configurations
+添加一个新的项。
+<img src="https://farm3.staticflickr.com/2928/14617040064_088658d740_o.png">
+<img src="https://farm3.staticflickr.com/2912/14639067183_6776a117b8_b.jpg">
+javap这个工具可以用来输出java类 对应jni的描述。
+<img src="http://farm3.staticflickr.com/2939/14619183735_dfb1841c44_b.jpg">
+把Signature 后面的字符串拷贝就行了（<strong>后面的分号也要拷贝</strong>）。这样可以在GetField中使用了。
+env->GetField(cls, &ldquo;fieldName&rdquo;, &ldquo;Signature&rdquo;);
+javah的工具配置类似。</p>
+
+<h2>定位文件目录</h2>
+
+<p>跟VS一样，VS在标签中右键打开文件目录一样。Eclipse须要配置。也是在External Tool中。
+新建一个
+<img src="http://farm3.staticflickr.com/2931/14618685852_2340a8acab_b.jpg">
+Build选项下面就不要勾上build before launch了。</p>
+
+<p><a href="http://www.open-open.com/bbs/view/1320934157953/">Eclipse快捷键 10个最有用的快捷键</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">邱俊炜</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-09T19:33:01+08:00" pubdate data-updated="true">Jul 9<sup>th</sup>, 2014</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rtwf.github.io/blog/2014/07/09/eclipse-tools/" data-via="" data-counturl="http://rtwf.github.io/blog/2014/07/09/eclipse-tools/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/07/09/local-reference-table-overflow/" title="Previous Post: Andriod ndk error local reference table overflow Max 512">&laquo; Andriod ndk error local reference table overflow Max 512</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/07/17/vs-error-collection/" title="Next Post: vs编译错误及解决办法">vs编译错误及解决办法 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>最新发布</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/07/23/buildbot-build/">buildbot的构建总结</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/17/vs-error-collection/">vs编译错误及解决办法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/09/eclipse-tools/">Eclipse 工具</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/09/local-reference-table-overflow/">Andriod ndk error local reference table overflow Max 512</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/03/how-to-install-octproess/">如何使用本博客</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Tag Cloud</h1>
+    <span id="tag-cloud"><embed type='application/x-shockwave-flash' src='/javascripts/tagcloud.swf'width='100%' height='250' bgcolor='#f2f2f2' id='tagcloudflash' name='tagcloudflash' quality='high' allowscriptaccess='always'flashvars="tcolor=0x333333&amp;tcolor2=0x333333&amp;hicolor=0x000000&amp;tspeed=100&amp;distr=true&amp;mode=tags&amp;tagcloud=%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Frtwf.github.io%2Fblog%2Ftags%2Fbuild%27+style%3D%27font-size%3A+50.0%25%27%3Ebuild%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Frtwf.github.io%2Fblog%2Ftags%2Fcompile%27+style%3D%27font-size%3A+50.0%25%27%3ECompile%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Frtwf.github.io%2Fblog%2Ftags%2Fjni%27+style%3D%27font-size%3A+50.0%25%27%3EJNI%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Frtwf.github.io%2Fblog%2Ftags%2Foctopress%27+style%3D%27font-size%3A+50.0%25%27%3Eoctopress%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Frtwf.github.io%2Fblog%2Ftags%2Ftools%27+style%3D%27font-size%3A+50.0%25%27%3Etools%3C%2Fa%3E+%3C%2Ftags%3E"></span>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - 邱俊炜 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'sweetdark';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rtwf.github.io/blog/2014/07/09/eclipse-tools/';
+        var disqus_url = 'http://rtwf.github.io/blog/2014/07/09/eclipse-tools/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
